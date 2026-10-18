@@ -1,0 +1,8 @@
+{
+    "num_clients": 10,
+    "seed": 42,
+    "training_samples": 140272,
+    "test_samples": 35069,
+    "feature_count": 192,
+    "target": "label"
+}

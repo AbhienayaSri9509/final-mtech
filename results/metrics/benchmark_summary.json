@@ -1,0 +1,52 @@
+[
+    {
+        "name": "exp_a_fedavg_benign",
+        "algorithm": "FedAvg",
+        "description": "Experiment A: Standard FedAvg under benign conditions",
+        "accuracy": 0.9394907182982121,
+        "precision": 0.9292905365391448,
+        "recall": 0.9861326406636223,
+        "f1": 0.9568681653725761,
+        "duration": 11.72
+    },
+    {
+        "name": "exp_b_fedavg_attacked",
+        "algorithm": "FedAvg",
+        "description": "Experiment B: Standard FedAvg under sign-flip poisoning attack",
+        "accuracy": 0.9321052781659015,
+        "precision": 0.9130718954248366,
+        "recall": 0.9949725585487452,
+        "f1": 0.952264480041701,
+        "duration": 9.15
+    },
+    {
+        "name": "exp_c_trustfed_attacked",
+        "algorithm": "TrustFed-6G",
+        "description": "Experiment C: TrustFed-6G defense with TPRS and Dynamic Trust",
+        "accuracy": 0.9396903247882745,
+        "precision": 0.9313188991989848,
+        "recall": 0.9839540827014118,
+        "f1": 0.9569132356835822,
+        "duration": 8.99
+    },
+    {
+        "name": "exp_d_trustfed_privacy",
+        "algorithm": "TrustFed-6G",
+        "description": "Experiment D: TrustFed-6G with Adaptive Differential Privacy Noise",
+        "accuracy": 0.9283697852804471,
+        "precision": 0.9076541324680283,
+        "recall": 0.9961037328752775,
+        "f1": 0.9498242249920102,
+        "duration": 8.55
+    },
+    {
+        "name": "exp_e_trustfed_clean",
+        "algorithm": "TrustFed-6G",
+        "description": "Experiment E: Full TrustFed-6G under benign conditions",
+        "accuracy": 0.9396903247882745,
+        "precision": 0.9313188991989848,
+        "recall": 0.9839540827014118,
+        "f1": 0.9569132356835822,
+        "duration": 8.49
+    }
+]

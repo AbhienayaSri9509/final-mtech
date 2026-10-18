@@ -1,0 +1,422 @@
+{
+    "experiment_id": "test_pipeline_unit",
+    "config": {
+        "name": "test_pipeline_unit",
+        "algorithm": "TrustFed-6G",
+        "rounds": 2,
+        "num_clients": 10,
+        "clients_per_round": 4,
+        "local_epochs": 1,
+        "batch_size": 256,
+        "learning_rate": 0.001,
+        "seed": 42,
+        "max_batches": 4,
+        "enable_privacy": true,
+        "enable_dynamic_trust": true
+    },
+    "duration_seconds": 2.4,
+    "final_metrics": {
+        "accuracy": 0.7998517208930964,
+        "precision": 0.7732727862471619,
+        "recall": 0.9987850349826134,
+        "f1": 0.8716795553849248,
+        "confusion_matrix": [
+            [
+                4210,
+                6990
+            ],
+            [
+                29,
+                23840
+            ]
+        ]
+    },
+    "round_history": [
+        {
+            "round": 1,
+            "selected_clients": [
+                9,
+                2,
+                5,
+                8
+            ],
+            "selected_malicious": [],
+            "metrics": {
+                "accuracy": 0.8084062847529156,
+                "precision": 0.7812213039485767,
+                "recall": 0.9979890234194981,
+                "f1": 0.8764003605526021,
+                "confusion_matrix": [
+                    [
+                        4529,
+                        6671
+                    ],
+                    [
+                        48,
+                        23821
+                    ]
+                ]
+            },
+            "client_records": [
+                {
+                    "client_id": 9,
+                    "trust": 0.5713345883941039,
+                    "cpu_available": 0.75176665294889,
+                    "memory_available": 0.9294331260756687,
+                    "bandwidth": 0.6747958551554774,
+                    "latency_score": 0.677754847143974,
+                    "privacy_risk": 0.3810926296736161,
+                    "loss": 0.6907264888286591,
+                    "tprs": 0.6278523941257843,
+                    "quality": 0.5,
+                    "resource": 0.8405998895122794,
+                    "network": 0.6762753511497257,
+                    "privacy_suitability": 0.6189073703263839,
+                    "selected": true,
+                    "size": 14027,
+                    "is_malicious": false,
+                    "aggregation_weight": 0.2526569413660449
+                },
+                {
+                    "client_id": 2,
+                    "trust": 0.571374568433671,
+                    "cpu_available": 0.4811478443455544,
+                    "memory_available": 0.8439647772940577,
+                    "bandwidth": 0.7684642044123535,
+                    "latency_score": 0.8745202498247451,
+                    "privacy_risk": 0.3235429055863903,
+                    "loss": 0.6909802407026291,
+                    "tprs": 0.6197931762032058,
+                    "quality": 0.5,
+                    "resource": 0.662556310819806,
+                    "network": 0.8214922271185493,
+                    "privacy_suitability": 0.6764570944136097,
+                    "selected": true,
+                    "size": 14027,
+                    "is_malicious": false,
+                    "aggregation_weight": 0.24941379477749628
+                },
+                {
+                    "client_id": 5,
+                    "trust": 0.5708754656283479,
+                    "cpu_available": 0.8772239239347789,
+                    "memory_available": 0.8566346048454427,
+                    "bandwidth": 0.5942314158989134,
+                    "latency_score": 0.509116047546882,
+                    "privacy_risk": 0.335486312113861,
+                    "loss": 0.6910310685634613,
+                    "tprs": 0.6188509211135751,
+                    "quality": 0.5,
+                    "resource": 0.8669292643901108,
+                    "network": 0.5516737317228977,
+                    "privacy_suitability": 0.6645136878861391,
+                    "selected": true,
+                    "size": 14027,
+                    "is_malicious": false,
+                    "aggregation_weight": 0.24903461761553905
+                },
+                {
+                    "client_id": 8,
+                    "trust": 0.5706081665073495,
+                    "cpu_available": 0.4748240961862839,
+                    "memory_available": 0.9336034391192012,
+                    "bandwidth": 0.8267299734323836,
+                    "latency_score": 0.5966462493284841,
+                    "privacy_risk": 0.2527532788390864,
+                    "loss": 0.6910973340272903,
+                    "tprs": 0.6185030923059097,
+                    "quality": 0.5,
+                    "resource": 0.7042137676527426,
+                    "network": 0.7116881113804339,
+                    "privacy_suitability": 0.7472467211609136,
+                    "selected": true,
+                    "size": 14027,
+                    "is_malicious": false,
+                    "aggregation_weight": 0.24889464624091984
+                }
+            ],
+            "weights": [
+                0.2526569413660449,
+                0.24941379477749628,
+                0.24903461761553905,
+                0.24889464624091984
+            ]
+        },
+        {
+            "round": 2,
+            "selected_clients": [
+                9,
+                2,
+                5,
+                8
+            ],
+            "selected_malicious": [],
+            "metrics": {
+                "accuracy": 0.7998517208930964,
+                "precision": 0.7732727862471619,
+                "recall": 0.9987850349826134,
+                "f1": 0.8716795553849248,
+                "confusion_matrix": [
+                    [
+                        4210,
+                        6990
+                    ],
+                    [
+                        29,
+                        23840
+                    ]
+                ]
+            },
+            "client_records": [
+                {
+                    "client_id": 9,
+                    "trust": 0.6289238547840803,
+                    "cpu_available": 0.75176665294889,
+                    "memory_available": 0.9294331260756687,
+                    "bandwidth": 0.6747958551554774,
+                    "latency_score": 0.677754847143974,
+                    "privacy_risk": 0.3810926296736161,
+                    "loss": 0.6696659624576569,
+                    "tprs": 0.6451291740427773,
+                    "quality": 0.5,
+                    "resource": 0.8405998895122794,
+                    "network": 0.6762753511497257,
+                    "privacy_suitability": 0.6189073703263839,
+                    "selected": true,
+                    "size": 14027,
+                    "is_malicious": false,
+                    "aggregation_weight": 0.252621098704048
+                },
+                {
+                    "client_id": 2,
+                    "trust": 0.6283408475026542,
+                    "cpu_available": 0.4811478443455544,
+                    "memory_available": 0.8439647772940577,
+                    "bandwidth": 0.7684642044123535,
+                    "latency_score": 0.8745202498247451,
+                    "privacy_risk": 0.3235429055863903,
+                    "loss": 0.6703439801931381,
+                    "tprs": 0.6368830599239008,
+                    "quality": 0.5,
+                    "resource": 0.662556310819806,
+                    "network": 0.8214922271185493,
+                    "privacy_suitability": 0.6764570944136097,
+                    "selected": true,
+                    "size": 14027,
+                    "is_malicious": false,
+                    "aggregation_weight": 0.24939206722854473
+                },
+                {
+                    "client_id": 5,
+                    "trust": 0.628330768042419,
+                    "cpu_available": 0.8772239239347789,
+                    "memory_available": 0.8566346048454427,
+                    "bandwidth": 0.5942314158989134,
+                    "latency_score": 0.509116047546882,
+                    "privacy_risk": 0.335486312113861,
+                    "loss": 0.6708592027425766,
+                    "tprs": 0.6360875118377964,
+                    "quality": 0.5,
+                    "resource": 0.8669292643901108,
+                    "network": 0.5516737317228977,
+                    "privacy_suitability": 0.6645136878861391,
+                    "selected": true,
+                    "size": 14027,
+                    "is_malicious": false,
+                    "aggregation_weight": 0.24908054476192898
+                },
+                {
+                    "client_id": 8,
+                    "trust": 0.6277395532064759,
+                    "cpu_available": 0.4748240961862839,
+                    "memory_available": 0.9336034391192012,
+                    "bandwidth": 0.8267299734323836,
+                    "latency_score": 0.5966462493284841,
+                    "privacy_risk": 0.2527532788390864,
+                    "loss": 0.6712870895862579,
+                    "tprs": 0.6356425083156477,
+                    "quality": 0.5,
+                    "resource": 0.7042137676527426,
+                    "network": 0.7116881113804339,
+                    "privacy_suitability": 0.7472467211609136,
+                    "selected": true,
+                    "size": 14027,
+                    "is_malicious": false,
+                    "aggregation_weight": 0.24890628930547845
+                }
+            ],
+            "weights": [
+                0.252621098704048,
+                0.24939206722854473,
+                0.24908054476192898,
+                0.24890628930547845
+            ]
+        }
+    ],
+    "client_metadata_final": [
+        {
+            "client_id": 0,
+            "trust": 0.5,
+            "cpu_available": 0.7046285844161628,
+            "memory_available": 0.4783439315397859,
+            "bandwidth": 0.4228954217984007,
+            "latency_score": 0.4358456225123776,
+            "privacy_risk": 0.7020829494935311,
+            "loss": 1.0,
+            "tprs": 0.4874945349695502,
+            "quality": 0.5,
+            "resource": 0.5914862579779744,
+            "network": 0.4293705221553891,
+            "privacy_suitability": 0.2979170505064689,
+            "selected": false
+        },
+        {
+            "client_id": 1,
+            "trust": 0.5,
+            "cpu_available": 0.7167033729995969,
+            "memory_available": 0.9216405045862262,
+            "bandwidth": 0.9085013383199192,
+            "latency_score": 0.8007621554609562,
+            "privacy_risk": 0.7891278565893104,
+            "loss": 1.0,
+            "tprs": 0.5881163641332169,
+            "quality": 0.5,
+            "resource": 0.8191719387929115,
+            "network": 0.8546317468904376,
+            "privacy_suitability": 0.2108721434106896,
+            "selected": false
+        },
+        {
+            "client_id": 2,
+            "trust": 0.6283408475026542,
+            "cpu_available": 0.4811478443455544,
+            "memory_available": 0.8439647772940577,
+            "bandwidth": 0.7684642044123535,
+            "latency_score": 0.8745202498247451,
+            "privacy_risk": 0.3235429055863903,
+            "loss": 0.6703439801931381,
+            "tprs": 0.6368830599239008,
+            "quality": 0.5,
+            "resource": 0.662556310819806,
+            "network": 0.8214922271185493,
+            "privacy_suitability": 0.6764570944136097,
+            "selected": true,
+            "size": 14027
+        },
+        {
+            "client_id": 3,
+            "trust": 0.5,
+            "cpu_available": 0.8152195173709709,
+            "memory_available": 0.4312609504882354,
+            "bandwidth": 0.8048055560032814,
+            "latency_score": 0.50463661347254,
+            "privacy_risk": 0.8622767462562746,
+            "loss": 1.0,
+            "tprs": 0.5116285348709798,
+            "quality": 0.5,
+            "resource": 0.6232402339296031,
+            "network": 0.6547210847379107,
+            "privacy_suitability": 0.1377232537437254,
+            "selected": false
+        },
+        {
+            "client_id": 4,
+            "trust": 0.5,
+            "cpu_available": 0.9415315109560486,
+            "memory_available": 0.6271638688738461,
+            "bandwidth": 0.9084089052203708,
+            "latency_score": 0.5388779197489324,
+            "privacy_risk": 0.5936099533556304,
+            "loss": 1.0,
+            "tprs": 0.5810550545201242,
+            "quality": 0.5,
+            "resource": 0.7843476899149473,
+            "network": 0.7236434124846516,
+            "privacy_suitability": 0.4063900466443696,
+            "selected": false
+        },
+        {
+            "client_id": 5,
+            "trust": 0.628330768042419,
+            "cpu_available": 0.8772239239347789,
+            "memory_available": 0.8566346048454427,
+            "bandwidth": 0.5942314158989134,
+            "latency_score": 0.509116047546882,
+            "privacy_risk": 0.335486312113861,
+            "loss": 0.6708592027425766,
+            "tprs": 0.6360875118377964,
+            "quality": 0.5,
+            "resource": 0.8669292643901108,
+            "network": 0.5516737317228977,
+            "privacy_suitability": 0.6645136878861391,
+            "selected": true,
+            "size": 14027
+        },
+        {
+            "client_id": 6,
+            "trust": 0.5,
+            "cpu_available": 0.4027497167109521,
+            "memory_available": 0.5856908003426751,
+            "bandwidth": 0.7971925833902149,
+            "latency_score": 0.6538499262518471,
+            "privacy_risk": 0.212059109023015,
+            "loss": 1.0,
+            "tprs": 0.5614663290262158,
+            "quality": 0.5,
+            "resource": 0.4942202585268136,
+            "network": 0.725521254821031,
+            "privacy_suitability": 0.7879408909769849,
+            "selected": false
+        },
+        {
+            "client_id": 7,
+            "trust": 0.5,
+            "cpu_available": 0.583795232613627,
+            "memory_available": 0.5431701490574086,
+            "bandwidth": 0.7241441124079194,
+            "latency_score": 0.4432351202369496,
+            "privacy_risk": 0.6849753290685907,
+            "loss": 1.0,
+            "tprs": 0.5067524477086097,
+            "quality": 0.5,
+            "resource": 0.5634826908355177,
+            "network": 0.5836896163224345,
+            "privacy_suitability": 0.3150246709314093,
+            "selected": false
+        },
+        {
+            "client_id": 8,
+            "trust": 0.6277395532064759,
+            "cpu_available": 0.4748240961862839,
+            "memory_available": 0.9336034391192012,
+            "bandwidth": 0.8267299734323836,
+            "latency_score": 0.5966462493284841,
+            "privacy_risk": 0.2527532788390864,
+            "loss": 0.6712870895862579,
+            "tprs": 0.6356425083156477,
+            "quality": 0.5,
+            "resource": 0.7042137676527426,
+            "network": 0.7116881113804339,
+            "privacy_suitability": 0.7472467211609136,
+            "selected": true,
+            "size": 14027
+        },
+        {
+            "client_id": 9,
+            "trust": 0.6289238547840803,
+            "cpu_available": 0.75176665294889,
+            "memory_available": 0.9294331260756687,
+            "bandwidth": 0.6747958551554774,
+            "latency_score": 0.677754847143974,
+            "privacy_risk": 0.3810926296736161,
+            "loss": 0.6696659624576569,
+            "tprs": 0.6451291740427773,
+            "quality": 0.5,
+            "resource": 0.8405998895122794,
+            "network": 0.6762753511497257,
+            "privacy_suitability": 0.6189073703263839,
+            "selected": true,
+            "size": 14027
+        }
+    ]
+}
